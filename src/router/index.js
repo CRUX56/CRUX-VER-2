@@ -8,6 +8,26 @@ const routes = [
     path: '/',
     component: () => import('../views/index.vue')
   },
+  {
+    path: '/portfolio-item-1',
+    name: 'Portfolio-test-item-1',
+    component: () => import('../views/work/portfolio-item-1.vue')
+  },
+  {
+    path: '/portfolio-item-2',
+    name: 'Portfolio-test-item-2',
+    component: () => import('../views/work/portfolio-item-2.vue')
+  },
+  {
+    path: '/portfolio-item-3',
+    name: 'Portfolio-test-item-3',
+    component: () => import('../views/work/portfolio-item-3.vue')
+  },
+  {
+    path: '/portfolio-item-4',
+    name: 'Portfolio-test-item-4',
+    component: () => import('../views/work/portfolio-item-4.vue')
+  },
   /*{
     path: '/index-1',
     name: 'Index-1',
