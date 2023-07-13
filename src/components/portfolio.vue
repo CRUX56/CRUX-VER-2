@@ -1,9 +1,41 @@
 <script>
+    import featuredPortfolioItem from './featured-portfolio-item.vue';
 
+    export default {
+        components: {
+            featuredPortfolioItem
+        },
+        data() {
+            return{
+                portfolioFeatured: [
+                    {
+                        title: 'Portfolio Featured 1',
+                        backgroundImage: 'Change this string',
+                        link: ''
+                    },
+                    {
+                        title: 'Portfolio Featured 1',
+                        backgroundImage: 'Change this string',
+                        link: ''
+                    },
+                    {
+                        title: 'Portfolio Featured 1',
+                        backgroundImage: 'Change this string',
+                        link: ''
+                    }
+                ]
+            }
+        }
+    }
 </script>
 
 <template>
     <section class="section bg-dark">
+        <div class="row">
+            <div class="col-lg-12">
+                <featuredPortfolioItem :portfolioFeatured="portfolioFeatured"></featuredPortfolioItem>
+            </div>
+        </div>
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="portfolio-item">

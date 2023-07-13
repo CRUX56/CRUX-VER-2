@@ -103,6 +103,7 @@ export default {
             >Contact Us</a>
           </li>
         </ul>
+        <!--
         <ul class="navbar-nav navbar-center">
           <li class="nav-item">
             <a href="javascript: void(0);" class="nav-link" v-b-modal.login-modal>Log in</a>
@@ -110,7 +111,7 @@ export default {
           <li class="nav-item">
             <a href="javascript: void(0);" class="nav-link" v-b-modal.register-modal>Register</a>
           </li>
-        </ul>
+        </ul>-->
       </div>
     </div>
     <b-modal id="login-modal" hide-header hide-footer centered>
