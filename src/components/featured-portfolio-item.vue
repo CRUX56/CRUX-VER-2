@@ -22,25 +22,25 @@
             }
         },*/
         methods: {
-            handleNavigation() {
+            handleNavigation(item) {
                 this.$router.push({
-                    name: this.portfolioFeatured.name,
+                    name: this.name,
                     params: {
-                        link: this.portfolioFeatured.path
+                        link: this.path
                     }
                 });
             }
-        },
-        created() {
-            console.log(this.portfolioFeatured);
         }
     }
 </script>
 
 <template>
     <div class="portfolio-featured">
-        <div v-for="(item, index) in portfolioFeatured" :key="index" class="featured-item" @click="handleNavigation()">
-            <div class="featured-header"><h3>{{ portfolioFeatured.title }}</h3></div>
+        <div 
+        v-for="(item, index) in portfolioFeatured" :key="index" 
+        :style="{ backgroundImage: 'url(' + backgroundImage + ')'}" 
+        class="featured-item" @click="handleNavigation(item)">
+            <div class="featured-header"><h3>{{ item.title }}</h3></div>
         </div>
     </div>
 </template>

@@ -10,17 +10,17 @@
                 portfolioFeatured: [
                     {
                         title: 'Portfolio Featured 1',
-                        backgroundImage: 'Change this string',
+                        backgroundImage: '../assets/images/hero-1-img.png',
                         link: ''
                     },
                     {
                         title: 'Portfolio Featured 1',
-                        backgroundImage: 'Change this string',
+                        backgroundImage: '../assets/images/hero-1-img.png',
                         link: ''
                     },
                     {
                         title: 'Portfolio Featured 1',
-                        backgroundImage: 'Change this string',
+                        backgroundImage: '../assets/images/hero-1-img.png',
                         link: ''
                     }
                 ]
@@ -30,12 +30,13 @@
 </script>
 
 <template>
-    <section class="section bg-dark">
+    <section id="portfolio" class="section bg-dark">
         <div class="row">
             <div class="col-lg-12">
                 <featuredPortfolioItem :portfolioFeatured="portfolioFeatured"></featuredPortfolioItem>
             </div>
         </div>
+        <!--
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="portfolio-item">
@@ -85,6 +86,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </section>
 </template>
