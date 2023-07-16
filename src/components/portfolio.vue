@@ -1,91 +1,43 @@
 <script>
-    import featuredPortfolioItem from './featured-portfolio-item.vue';
+import featuredPortfolioItem from "./featured-portfolio-item.vue";
+import portfolioOne from "../assets/images/hero-4-bg.jpg";
 
-    export default {
-        components: {
-            featuredPortfolioItem
+export default {
+  components: {
+    featuredPortfolioItem,
+  },
+  data() {
+    return {
+      portfolioFeatured: [
+        {
+          title: "Portfolio Featured 1",
+          backgroundImage: portfolioOne,
+          link: "Portfolio-test-item-1",
         },
-        data() {
-            return{
-                portfolioFeatured: [
-                    {
-                        title: 'Portfolio Featured 1',
-                        backgroundImage: '../assets/images/hero-1-img.png',
-                        link: ''
-                    },
-                    {
-                        title: 'Portfolio Featured 1',
-                        backgroundImage: '../assets/images/hero-1-img.png',
-                        link: ''
-                    },
-                    {
-                        title: 'Portfolio Featured 1',
-                        backgroundImage: '../assets/images/hero-1-img.png',
-                        link: ''
-                    }
-                ]
-            }
-        }
-    }
+        {
+          title: "Portfolio Featured 2",
+          backgroundImage: portfolioOne,
+          link: "Portfolio-test-item-2",
+        },
+        {
+          title: "Portfolio Featured 3",
+          backgroundImage: portfolioOne,
+          link: "Portfolio-test-item-3",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <template>
-    <section id="portfolio" class="section bg-dark">
-        <div class="row">
-            <div class="col-lg-12">
-                <featuredPortfolioItem :portfolioFeatured="portfolioFeatured"></featuredPortfolioItem>
-            </div>
-        </div>
-        <!--
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="portfolio-item">
-                    <div class="text-center mb-5">
-                        <router-link :to="{ name: 'Portfolio-test-item-1'}">
-                            <div class="thumb-hover">
-                                <p>Portfolio Test 1</p>
-                            </div>
-                            <img src="" alt="">
-                        </router-link>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="portfolio-item">
-                    <div class="text-center mb-5">
-                        <router-link :to="{ name: 'Portfolio-test-item-2'}">
-                            <div class="thumb-hover">
-                                <p>Portfolio Test 2</p>
-                            </div>
-                            <img src="" alt="">
-                        </router-link>
-                    </div>
-                </div>    
-            </div>
-            <div class="col-lg-6">
-                <div class="portfolio-item">
-                    <div class="text-center mb-5">
-                        <router-link :to="{ name: 'Portfolio-test-item-3'}">
-                            <div class="thumb-hover">
-                                <p>Portfolio Test 3</p>
-                            </div>
-                            <img src="" alt="" />
-                        </router-link>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="portfolio-item">
-                    <div class="text-center mb-5">
-                        <router-link :to="{ name: 'Portfolio-test-item-4'}">
-                            <div class="thumb-hover">
-                                <p>Portfolio Test 4</p>
-                            </div>
-                            <img src="" alt=""/>
-                        </router-link>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-    </section>
+  <section id="portfolio" class="section bg-dark">
+    <div class="row">
+      <div class="col-lg-12">
+        <featuredPortfolioItem
+          :portfolioFeatured="portfolioFeatured"
+        ></featuredPortfolioItem>
+      </div>
+    </div>
+  </section>
 </template>
