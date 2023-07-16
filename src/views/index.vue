@@ -2,9 +2,6 @@
 import Navbar from "@/components/navbar";
 import Info from "@/components/info";
 import Portfolio from "@/components/portfolio";
-import Service from "@/components/services";
-import Features from "@/components/features";
-import Pricing from "@/components/pricing";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 
@@ -12,12 +9,18 @@ import Footer from "@/components/footer";
  * Index-6
  */
 export default {
-  components: { Navbar, Info, Portfolio, Service, Features, Pricing, Contact, Footer },
+  components: {
+    Navbar,
+    Info,
+    Portfolio,
+    Contact,
+    Footer,
+  },
   data() {
     return {
-      navbarcolor: true
+      navbarcolor: true,
     };
-  }
+  },
 };
 </script>
 
@@ -28,7 +31,10 @@ export default {
       <!-- Hero Start -->
       <section
         class="hero-6-bg position-relative"
-        :style="{'background-image': 'url(' + require('@/assets/images/hero-6-bg-img.jpg') + ')'}"
+        :style="{
+          'background-image':
+            'url(' + require('@/assets/images/hero-6-bg-img.jpg') + ')',
+        }"
         id="home"
       >
         <div class="bg-overlay"></div>
@@ -36,12 +42,13 @@ export default {
           <div class="row justify-content-center">
             <div class="col-lg-8">
               <div class="text-center">
-                <h1
-                  class="text-white hero-6-title mb-4 line-height-1_4"
-                >We help startups launch their products with awesome website</h1>
-                <p
-                  class="text-white-50 w-75 mx-auto font-size-15"
-                >Et harum quidem rerum facilis est et expedita distinctio nam libero tempore cumque nihil impedit quo minus quod maxime.</p>
+                <h1 class="text-white hero-6-title mb-4 line-height-1_4">
+                  We help startups launch their products with awesome website
+                </h1>
+                <p class="text-white-50 w-75 mx-auto font-size-15">
+                  Et harum quidem rerum facilis est et expedita distinctio nam
+                  libero tempore cumque nihil impedit quo minus quod maxime.
+                </p>
               </div>
             </div>
           </div>
@@ -53,7 +60,9 @@ export default {
                   <button
                     type="submit"
                     class="btn rounded-pill btn-primary ml-2 mt-4 mt-sm-0"
-                  >SubCribe</button>
+                  >
+                    SubCribe
+                  </button>
                 </form>
               </div>
             </div>
@@ -63,10 +72,6 @@ export default {
       <!-- Hero End -->
       <Info />
       <Portfolio />
-      <Service />
-      <Features />
-      <Pricing />
-      <Blog />
       <Contact />
       <Footer />
     </div>
