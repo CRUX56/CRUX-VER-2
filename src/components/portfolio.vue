@@ -12,7 +12,7 @@ export default {
         {
           title: "Portfolio Featured 1",
           backgroundImage: portfolioOne,
-          link: "Portfolio-test-item-1",
+          link: "projectOne",
         },
         {
           title: "Portfolio Featured 2",
@@ -32,6 +32,21 @@ export default {
 
 <template>
   <section id="portfolio" class="section bg-dark">
+    <div class="row">
+      <div class="col-lg-6">
+        <h3>Projects ://</h3>
+      </div>
+      <div class="col-lg-6">
+        <a href="https://github.com/CRUX56" target="_blank">
+          <button
+            type="submit"
+            class="btn rounded-pill btn-primary ml-2 mt-4 mt-sm-0"
+          >
+            GitHub
+          </button>
+        </a>
+      </div>
+    </div>
     <div class="row">
       <div class="col-lg-12">
         <featuredPortfolioItem

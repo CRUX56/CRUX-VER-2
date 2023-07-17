@@ -15,8 +15,7 @@ export default {
       portfolioHead: [
         {
           projectTitle: "Portfolio Featured 1",
-          projectClient:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi dignissimos vitae sapiente voluptates, itaque adipisci voluptate quia maiores nemo expedita et rem asperiores fuga ipsa recusandae saepe delectus quibusdam!",
+          projectClient: "Client Test Name",
           projectCategory: "Website design, etc",
           projectSynopsis:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi dignissimos vitae sapiente voluptates, itaque adipisci voluptate quia maiores nemo expedita et rem asperiores fuga ipsa recusandae saepe delectus quibusdam!",
@@ -30,7 +29,7 @@ export default {
 <template>
   <div>
     <Navbar :navbarcolor="this.navbarcolor" />
-    <PortfolioHead :portfolioHead="portfolioHead"></PortfolioHead>
+    <PortfolioHead :projectHead="portfolioHead"></PortfolioHead>
     <Footer></Footer>
   </div>
 </template>
