@@ -2,6 +2,7 @@
 import Navbar from "@/components/navbar";
 import Info from "@/components/info";
 import Portfolio from "@/components/portfolio";
+import Experience from "@/components/experience";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 
@@ -13,6 +14,7 @@ export default {
     Navbar,
     Info,
     Portfolio,
+    Experience,
     Contact,
     Footer,
   },
@@ -43,11 +45,12 @@ export default {
             <div class="col-lg-8">
               <div class="text-center">
                 <h1 class="text-white hero-6-title mb-4 line-height-1_4">
-                  We help startups launch their products with awesome website
+                  Hello, I'm Dathan Cruz and I am a Front End Web Developer / UX
+                  - UI Designer...
                 </h1>
                 <p class="text-white-50 w-75 mx-auto font-size-15">
-                  Et harum quidem rerum facilis est et expedita distinctio nam
-                  libero tempore cumque nihil impedit quo minus quod maxime.
+                  and I have the skills and talent to help you in all aspects of
+                  your business. Need proof?
                 </p>
               </div>
             </div>
@@ -61,7 +64,7 @@ export default {
                     type="submit"
                     class="btn rounded-pill btn-primary ml-2 mt-4 mt-sm-0"
                   >
-                    SubCribe
+                    Contact Me
                   </button>
                 </form>
               </div>
@@ -72,6 +75,7 @@ export default {
       <!-- Hero End -->
       <Info />
       <Portfolio />
+      <Experience />
       <Contact />
       <Footer />
     </div>
