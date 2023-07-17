@@ -6,8 +6,12 @@ Vue.use(VueRouter);
 //Root
 const home = () => import("../views/index.vue");
 
-//Subpages
-const projectOne = () => import("../views/work/portfolio-item-1.vue");
+//Subpages - Projects
+const thmsprtsProject = () => import("../views/work/thmsprts.vue");
+const artOfAcupunctureProject = () =>
+  import("../views/work/art-of-acupuncture.vue");
+const lindenComansaProject = () => import("../views/work/linden-comansa.vue");
+const helivsionProject = () => import("../views/work/helivision.vue");
 
 const routes = [
   {
@@ -17,9 +21,27 @@ const routes = [
     props: true,
   },
   {
-    path: "/work/project-one",
-    name: "projectOne",
-    component: projectOne,
+    path: "/work/thmsprts",
+    name: "thmsprtsProject",
+    component: thmsprtsProject,
+    props: true,
+  },
+  {
+    path: "/work/art-of-acupuncture",
+    name: "artOfAcupunctureProject",
+    component: artOfAcupunctureProject,
+    props: true,
+  },
+  {
+    path: "/work/linden-comansa",
+    name: "lindenComansaProject",
+    component: lindenComansaProject,
+    props: true,
+  },
+  {
+    path: "/work/helivision",
+    name: "helivisionProject",
+    component: helivsionProject,
     props: true,
   },
 ];

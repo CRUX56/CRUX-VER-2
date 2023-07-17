@@ -1,6 +1,10 @@
 <script>
 import featuredPortfolioItem from "./featured-portfolio-item.vue";
-import portfolioOne from "../assets/images/hero-4-bg.jpg";
+//Import Project background imgs
+import thmsprts from "../assets/images/thm-portfolio-hero-image.jpg";
+import artOfacupuncture from "../assets/images/hero-4-bg.jpg";
+import lindenComansa from "../assets/images/linden-comansa-hero-image.jpg";
+import helivision from "../assets/images/helivision-hero-image.jpg";
 
 export default {
   components: {
@@ -10,19 +14,24 @@ export default {
     return {
       portfolioFeatured: [
         {
-          title: "Portfolio Featured 1",
-          backgroundImage: portfolioOne,
-          link: "projectOne",
+          title: "THMSPRTS",
+          backgroundImage: thmsprts,
+          link: "thmsprtsProject",
         },
         {
-          title: "Portfolio Featured 2",
-          backgroundImage: portfolioOne,
-          link: "Portfolio-test-item-2",
+          title: "Art of Acupuncture",
+          backgroundImage: artOfacupuncture,
+          link: "artOfAcupunctureProject",
         },
         {
-          title: "Portfolio Featured 3",
-          backgroundImage: portfolioOne,
-          link: "Portfolio-test-item-3",
+          title: "Linden Comansa",
+          backgroundImage: lindenComansa,
+          link: "lindenComansaProject",
+        },
+        {
+          title: "Helivision",
+          backgroundImage: helivision,
+          link: "helivisionProject",
         },
       ],
     };
