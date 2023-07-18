@@ -4,6 +4,15 @@
   <section id="experience" class="section">
     <div class="container">
       <div class="row">
+        <div class="col-lg-12 text-center">
+          <h3>Brand Experience</h3>
+          <p>
+            Below are some of the brands that I have been privileged to work
+            with.
+          </p>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-lg-3">
           <img
             src="../assets/images/brand-experience/comfortaire-logo-dark.jpg"

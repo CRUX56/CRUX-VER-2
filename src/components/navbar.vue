@@ -96,7 +96,7 @@ export default {
           <li class="nav-item">
             <a
               href="javascript: void(0);"
-              v-scroll-to="{ el: '#features', offset: -2 }"
+              v-scroll-to="{ el: '#info', offset: -2 }"
               class="nav-link"
               >Info</a
             >
@@ -104,18 +104,19 @@ export default {
           <li class="nav-item">
             <a
               href="javascript: void(0);"
-              v-scroll-to="{ el: '#pricing', offset: -2 }"
+              v-scroll-to="{ el: '#portfolio', offset: -2 }"
               class="nav-link"
               >Work</a
             >
           </li>
-          <!--<li class="nav-item">
+          <li class="nav-item">
             <a
               href="javascript: void(0);"
-              v-scroll-to="{ el:'#blog', offset: -1}"
+              v-scroll-to="{ el: '#experience', offset: -1 }"
               class="nav-link"
-            >Blog</a>
-          </li>-->
+              >Experience</a
+            >
+          </li>
           <li class="nav-item">
             <a
               href="javascript: void(0);"
