@@ -6,6 +6,8 @@ import Experience from "@/components/experience";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 
+import axios from "axios";
+
 /**
  * Index-6
  */
@@ -21,7 +23,23 @@ export default {
   data() {
     return {
       navbarcolor: true,
+      email: "",
     };
+  },
+  methods: {
+    submitForm() {
+      console.log("Hero contact form clicked");
+      axios
+        .post("mailer", {
+          email: this.email,
+        })
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
   },
 };
 </script>
