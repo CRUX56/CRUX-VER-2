@@ -22,7 +22,7 @@
 @import "./node_modules/bootstrap/scss/functions";
 @import "./node_modules/bootstrap/scss/variables";
 @import "./node_modules/bootstrap/scss/bootstrap";
-@import '~bootstrap-vue/src/index.scss';
+@import "~bootstrap-vue/src/index.scss";
 
 @import "variables";
 @import "general";
@@ -37,3 +37,5 @@
 @import "contact";
 @import "footer";
 @import "modal";
+@import "portfolio-gallery";
+@import "portfolio-fullscreen-slider";

@@ -53,6 +53,40 @@ export default {
   <div>
     <Navbar :navbarcolor="this.navbarcolor" />
     <PortfolioHead :projectHead="portfolioHead"></PortfolioHead>
+    <div class="row">
+      <div class="col-lg-12">
+        <iframe
+          width="1920"
+          height="auto"
+          src="https://www.youtube.com/embed/oXWO_ciIWtQ?controls=0&amp;start=14"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h3>Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            laboriosam et blanditiis veniam, ab adipisci. Veritatis aspernatur
+            quo assumenda velit maiores error, doloremque deserunt harum
+            incidunt ex recusandae quasi qui!
+          </p>
+        </div>
+        <div class="col-lg-8">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
+            ducimus hic earum cupiditate a magnam consequuntur adipisci ab quos
+            voluptate, expedita accusamus, quibusdam veritatis vitae, asperiores
+            rerum cum eius excepturi.
+          </p>
+        </div>
+      </div>
+    </div>
     <PortfolioGallery :imagesGallery="images"></PortfolioGallery>
     <Footer></Footer>
   </div>
