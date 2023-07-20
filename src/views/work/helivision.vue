@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar";
 import PortfolioHead from "@/components/portfolio-header";
 import PortfolioGallery from "@/components/portfolio-gallery";
 import PortfolioFullscreenSlider from "@/components/portfolio-fullscreen-slider";
+import Contact from "@/components/contact.vue";
 import Footer from "@/components/footer";
 
 export default {
@@ -11,6 +12,7 @@ export default {
     PortfolioHead,
     PortfolioFullscreenSlider,
     PortfolioGallery,
+    Contact,
     Footer,
   },
   data() {
@@ -98,52 +100,58 @@ export default {
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <h3>Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            laboriosam et blanditiis veniam, ab adipisci. Veritatis aspernatur
-            quo assumenda velit maiores error, doloremque deserunt harum
-            incidunt ex recusandae quasi qui!
-          </p>
-        </div>
-        <div class="col-lg-8">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
-            ducimus hic earum cupiditate a magnam consequuntur adipisci ab quos
-            voluptate, expedita accusamus, quibusdam veritatis vitae, asperiores
-            rerum cum eius excepturi.
-          </p>
+    <section class="section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h3>Title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              laboriosam et blanditiis veniam, ab adipisci. Veritatis aspernatur
+              quo assumenda velit maiores error, doloremque deserunt harum
+              incidunt ex recusandae quasi qui!
+            </p>
+          </div>
+          <div class="col-lg-8">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Architecto ducimus hic earum cupiditate a magnam consequuntur
+              adipisci ab quos voluptate, expedita accusamus, quibusdam
+              veritatis vitae, asperiores rerum cum eius excepturi.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <PortfolioGallery :imagesGallery="images"></PortfolioGallery>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <h3>Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            laboriosam et blanditiis veniam, ab adipisci. Veritatis aspernatur
-            quo assumenda velit maiores error, doloremque deserunt harum
-            incidunt ex recusandae quasi qui!
-          </p>
-        </div>
-        <div class="col-lg-8">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
-            ducimus hic earum cupiditate a magnam consequuntur adipisci ab quos
-            voluptate, expedita accusamus, quibusdam veritatis vitae, asperiores
-            rerum cum eius excepturi.
-          </p>
+    <section class="section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h3>Title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              laboriosam et blanditiis veniam, ab adipisci. Veritatis aspernatur
+              quo assumenda velit maiores error, doloremque deserunt harum
+              incidunt ex recusandae quasi qui!
+            </p>
+          </div>
+          <div class="col-lg-8">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Architecto ducimus hic earum cupiditate a magnam consequuntur
+              adipisci ab quos voluptate, expedita accusamus, quibusdam
+              veritatis vitae, asperiores rerum cum eius excepturi.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <PortfolioFullscreenSlider
       :portfolioSlider="portfolioSliderimages"
     ></PortfolioFullscreenSlider>
+    <Contact></Contact>
     <Footer></Footer>
   </div>
 </template>

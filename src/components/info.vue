@@ -1,8 +1,8 @@
 <script></script>
 
 <template>
-  <section>
-    <div id="info" class="container">
+  <section id="info" class="section bg-light">
+    <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-3">
           <h3 class="text-muted">About</h3>
