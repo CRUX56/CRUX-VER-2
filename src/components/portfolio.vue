@@ -1,6 +1,7 @@
 <script>
 import featuredPortfolioItem from "./featured-portfolio-item.vue";
 //Import Project background imgs
+import denOfTeas from "../assets/images/hero-1-img.png";
 import thmsprts from "../assets/images/thm-portfolio-hero-image.jpg";
 import artOfacupuncture from "../assets/images/hero-4-bg.jpg";
 import lindenComansa from "../assets/images/linden-comansa-hero-image.jpg";
@@ -13,6 +14,11 @@ export default {
   data() {
     return {
       portfolioFeatured: [
+        {
+          title: "Den of Teas",
+          backgroundImage: denOfTeas,
+          link: "denOfTeasProject",
+        },
         {
           title: "THMSPRTS",
           backgroundImage: thmsprts,

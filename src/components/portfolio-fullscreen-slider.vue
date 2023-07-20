@@ -1,31 +1,24 @@
 <script>
 export default {
+  props: {
+    portfolioSlider: {
+      type: Array,
+      required: true,
+    },
+  },
   data() {
     return {
-      images: [
-        {
-          src: "path/to/images1.jpg",
-          alt: "Image 1",
-        },
-        {
-          src: "path/to/images2.jpg",
-          alt: "Image 2",
-        },
-        {
-          src: "path/to/images3.jpg",
-          alt: "image 3",
-        },
-      ],
       currentSlide: 0,
     };
   },
   methods: {
     nextSlide() {
-      this.currentSlide = (this.currentSlide + 1) % this.images.length;
+      this.currentSlide = (this.currentSlide + 1) % this.portfolioSlider.length;
     },
     prevSlide() {
       this.currentSlide =
-        (this.currentSlide - 1 + this.images.length) % this.images.length;
+        (this.currentSlide - 1 + this.portfolioSlider.length) %
+        this.portfolioSlider.length;
     },
   },
 };
@@ -36,7 +29,7 @@ export default {
     <div class="slider-container">
       <transition-group name="slider" mode="out-in">
         <div
-          v-for="(image, index) in images"
+          v-for="(image, index) in portfolioSlider"
           :key="index"
           class="slider-item"
           :style="{ backgroundImage: 'url(' + image.src + ')' }"

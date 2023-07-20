@@ -7,6 +7,7 @@ Vue.use(VueRouter);
 const home = () => import("../views/index.vue");
 
 //Subpages - Projects
+const denOfTeasProject = () => import("../views/work/den-of-teas.vue");
 const thmsprtsProject = () => import("../views/work/thmsprts.vue");
 const artOfAcupunctureProject = () =>
   import("../views/work/art-of-acupuncture.vue");
@@ -18,6 +19,12 @@ const routes = [
     path: "/",
     name: "indexLink",
     component: home,
+    props: true,
+  },
+  {
+    path: "/work/den-of-teas",
+    name: "denOfTeas",
+    component: denOfTeasProject,
     props: true,
   },
   {
