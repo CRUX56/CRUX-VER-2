@@ -21,6 +21,11 @@ export default {
     LinkedinIcon,
     ArrowRightCircleIcon,
   },
+  data: function() {
+    return {
+      hash: this.$route.hash,
+    };
+  },
   mounted: () => {
     window.onscroll = function() {
       onwindowScroll();
@@ -90,7 +95,7 @@ export default {
               href="javascript: void(0);"
               v-scroll-to="'#home'"
               class="nav-link"
-              >Home</a
+              ><router-link :to="{ name: 'indexLink' }">Home</router-link></a
             >
           </li>
           <li class="nav-item">
@@ -98,7 +103,9 @@ export default {
               href="javascript: void(0);"
               v-scroll-to="{ el: '#info', offset: -2 }"
               class="nav-link"
-              >Info</a
+              ><router-link :to="{ name: 'indexLink', hash: '#info' }"
+                >Info</router-link
+              ></a
             >
           </li>
           <li class="nav-item">
@@ -106,7 +113,9 @@ export default {
               href="javascript: void(0);"
               v-scroll-to="{ el: '#portfolio', offset: -2 }"
               class="nav-link"
-              >Work</a
+              ><router-link :to="{ name: 'indexLink', hash: '#portfolio' }"
+                >Work</router-link
+              ></a
             >
           </li>
           <li class="nav-item">
@@ -114,7 +123,9 @@ export default {
               href="javascript: void(0);"
               v-scroll-to="{ el: '#experience', offset: -1 }"
               class="nav-link"
-              >Experience</a
+              ><router-link :to="{ name: 'indexLink', hash: '#experience' }"
+                >Experience</router-link
+              ></a
             >
           </li>
           <li class="nav-item">
@@ -122,7 +133,9 @@ export default {
               href="javascript: void(0);"
               v-scroll-to="{ el: '#contact', offset: -50 }"
               class="nav-link"
-              >Contact Us</a
+              ><router-link :to="{ name: 'indexLink', hash: '#contact' }"
+                >Contact Us</router-link
+              ></a
             >
           </li>
         </ul>
