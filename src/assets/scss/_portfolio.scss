@@ -1,3 +1,23 @@
+#portfolio {
+  .header {
+    padding-bottom: 80px;
+  }
+  #portfolio-grid {
+    .portfolio-featured {
+      .featured-item {
+        width: 100%;
+        height: 23.5rem;
+        background-attachment: fixed;
+        background-size: cover;
+        margin-top: 1rem;
+        padding: 2rem;
+        color: $light;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%;

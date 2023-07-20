@@ -80,7 +80,7 @@ export default {
                   <input type="text" placeholder="Enter your Email..." />
                   <button
                     type="submit"
-                    class="btn rounded-pill btn-primary ml-2 mt-4 mt-sm-0"
+                    class="btn btn-highlight ml-2 mt-4 mt-sm-0"
                   >
                     Contact Me
                   </button>

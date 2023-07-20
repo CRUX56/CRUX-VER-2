@@ -47,7 +47,7 @@ export default {
       @click="handleNavigation(item.link)"
     >
       <div class="featured-header">
-        <h3>{{ item.title }}</h3>
+        <h4>{{ item.title }}</h4>
       </div>
     </div>
   </div>

@@ -3,9 +3,10 @@
 <template>
   <section id="info" class="section bg-light">
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row align-items-start">
         <div class="col-lg-3">
-          <h3 class="text-muted">About</h3>
+          <h5 class="text-muted">About</h5>
+          <hr />
           <p>
             CRUX offers web design, web development, illustration, and graphic
             design services managed by our senior designer / developer Dathan
@@ -14,7 +15,8 @@
         </div>
         <div class="col-lg-3"></div>
         <div class="col-lg-6">
-          <h3 class="text-muted">Contact</h3>
+          <h5 class="text-muted">Contact</h5>
+          <hr />
           <p>
             If you have a scheduling inquiry for our creative services or would
             wish to chat for an upcoming project need, please contact us at
