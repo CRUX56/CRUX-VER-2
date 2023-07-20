@@ -53,11 +53,11 @@ export default {
         class="hero-6-bg position-relative"
         :style="{
           'background-image':
-            'url(' + require('@/assets/images/hero-6-bg-img.jpg') + ')',
+            'url(' + require('@/assets/images/hero-gradient-bg.jpg') + ')',
         }"
         id="home"
       >
-        <div class="bg-overlay"></div>
+        <!--<div class="bg-overlay"></div>-->
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8">

@@ -70,7 +70,7 @@ export default {
           height="24"
         />
         <img
-          src="@/assets/images/crux-logo-dark.png"
+          src="@/assets/images/crux-logo-white.png"
           alt
           class="logo-light"
           height="24"
