@@ -17,7 +17,7 @@ export default {
         {
           title: "Den of Teas",
           backgroundImage: denOfTeas,
-          link: "denOfTeasProject",
+          link: "denOfTeas",
         },
         {
           title: "THMSPRTS",

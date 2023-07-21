@@ -9,6 +9,10 @@
 a {
   text-decoration: none !important;
   outline: none;
+  color: $highlight;
+  &:hover {
+    color: $warning;
+  }
 }
 body {
   font-family: $font-primary;

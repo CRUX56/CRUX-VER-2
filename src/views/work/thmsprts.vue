@@ -6,6 +6,20 @@ import PortfolioFullscreenSlider from "@/components/portfolio-fullscreen-slider"
 import Contact from "@/components/contact.vue";
 import Footer from "@/components/footer";
 
+//Gallery Slider Img
+import galleryImageOne from "../../assets/images/hero-1-img.png";
+import galleryImageTwo from "../../assets/images/hero-1-img.png";
+import galleryImageThree from "../../assets/images/hero-1-img.png";
+import galleryImageFour from "../../assets/images/hero-1-img.png";
+import galleryImageFive from "../../assets/images/hero-1-img.png";
+import galleryImageSix from "../../assets/images/hero-1-img.png";
+
+//Portfolio Slider Imgs
+
+import portfolioImageOne from "../../assets/images/hero-4-bg.jpg";
+import portfolioImageTwo from "../../assets/images/hero-4-bg.jpg";
+import portfolioImageThree from "../../assets/images/hero-4-bg.jpg";
+
 export default {
   components: {
     Navbar,
@@ -29,27 +43,27 @@ export default {
       ],
       images: [
         {
-          src: "path/to/image1.jpg",
+          src: galleryImageOne,
           alt: "image 1",
         },
         {
-          src: "path/to/image2.jpg",
+          src: galleryImageTwo,
           alt: "image 2",
         },
         {
-          src: "path/to/image3.jpg",
+          src: galleryImageThree,
           alt: "image 3",
         },
         {
-          src: "path/to/image1.jpg",
+          src: galleryImageFour,
           alt: "image 1",
         },
         {
-          src: "path/to/image2.jpg",
+          src: galleryImageFive,
           alt: "image 2",
         },
         {
-          src: "path/to/image3.jpg",
+          src: galleryImageSix,
           alt: "image 3",
         },
       ],
@@ -59,15 +73,15 @@ export default {
 
       portfolioSliderimages: [
         {
-          src: "path/to/images1.jpg",
+          src: portfolioImageOne,
           alt: "Image 1",
         },
         {
-          src: "path/to/images2.jpg",
+          src: portfolioImageTwo,
           alt: "Image 2",
         },
         {
-          src: "path/to/images3.jpg",
+          src: portfolioImageThree,
           alt: "image 3",
         },
       ],
@@ -100,7 +114,7 @@ export default {
         </div>
       </div>
     </div>
-    <section class="section bg-light">
+    <section class="section bg-light align-items-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-4">

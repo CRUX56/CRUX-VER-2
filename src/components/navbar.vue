@@ -21,13 +21,13 @@ export default {
     LinkedinIcon,
     ArrowRightCircleIcon,
   },
-  data: function() {
+  data: function () {
     return {
       hash: this.$route.hash,
     };
   },
   mounted: () => {
-    window.onscroll = function() {
+    window.onscroll = function () {
       onwindowScroll();
     };
     var navbar = document.getElementById("navbar");
@@ -60,6 +60,7 @@ export default {
     id="navbar"
     :class="{ 'navbar-light': navbarcolor === true }"
   >
+    <!--'navbar-light': navbarcolor === true-->
     <div class="container">
       <!-- LOGO -->
       <a class="navbar-brand logo" href="/">
