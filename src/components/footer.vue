@@ -27,7 +27,7 @@ export default {
           <div class="col-lg-4">
             <div class="mb-5">
               <img
-                src="@/assets/images/crux-logo-dark.png"
+                src="@/assets/images/crux-logo-white.png"
                 alt
                 class
                 height="24"

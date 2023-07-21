@@ -53,6 +53,7 @@ export default {
           <h3>Projects ://</h3>
         </div>
         <div class="col-lg-6">
+          <!--
           <a href="https://github.com/CRUX56" target="_blank">
             <button
               type="submit"
@@ -60,7 +61,7 @@ export default {
             >
               GitHub
             </button>
-          </a>
+          </a>-->
         </div>
       </div>
     </div>
