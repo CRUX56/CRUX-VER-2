@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     startAutoPlay() {
-      this.interval = setInterval(this.nextSlide, 9000); // Set the interval for automatic sliding (every 3 seconds)
+      this.interval = setInterval(this.nextSlide, 9000); // Set the interval for automatic sliding (every 9 seconds)
     },
     stopAutoplay() {
       clearInterval(this.interval); // Clear the interval to stop automatic sliding
@@ -29,10 +29,11 @@ export default {
     },
   },
   mounted() {
-    this.startAutoPlay(); //Start automatic sliding on component mount
+    this.startAutoPlay(); // Start automatic sliding on component mount
+    console.log("portfolioSlider:", this.portfolioSlider);
   },
   beforeDestroy() {
-    this.stopAutoplay(); //Stop automatic sliding on component destruction
+    this.stopAutoplay(); // Stop automatic sliding on component destruction
   },
 };
 </script>
@@ -54,7 +55,7 @@ export default {
     </div>
     <div class="slider-navigation">
       <button class="slider-prev" @click="prevSlide">&#8249;</button>
-      <button class="slider-prev" @click="nextSlide">&#8249;</button>
+      <button class="slider-next" @click="nextSlide">&#8250;</button>
     </div>
   </div>
 </template>
