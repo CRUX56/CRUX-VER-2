@@ -9,9 +9,16 @@ export default {
   data() {
     return {
       currentSlide: 0,
+      interval: null,
     };
   },
   methods: {
+    startAutoPlay() {
+      this.interval = setInterval(this.nextSlide, 9000); // Set the interval for automatic sliding (every 3 seconds)
+    },
+    stopAutoplay() {
+      clearInterval(this.interval); // Clear the interval to stop automatic sliding
+    },
     nextSlide() {
       this.currentSlide = (this.currentSlide + 1) % this.portfolioSlider.length;
     },
@@ -21,12 +28,21 @@ export default {
         this.portfolioSlider.length;
     },
   },
+  mounted() {
+    this.startAutoPlay(); //Start automatic sliding on component mount
+  },
+  beforeDestroy() {
+    this.stopAutoplay(); //Stop automatic sliding on component destruction
+  },
 };
 </script>
 
 <template>
   <div class="fullscreen-slider">
-    <div class="slider-container">
+    <div
+      class="slider-container"
+      :style="{ transform: `translateX(-${currentSlide * 100}%)` }"
+    >
       <transition-group name="slider" mode="out-in">
         <div
           v-for="(image, index) in portfolioSlider"

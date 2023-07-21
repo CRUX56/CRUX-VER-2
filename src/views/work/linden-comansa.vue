@@ -3,7 +3,22 @@ import Navbar from "@/components/navbar";
 import PortfolioHead from "@/components/portfolio-header";
 import PortfolioGallery from "@/components/portfolio-gallery";
 import PortfolioFullscreenSlider from "@/components/portfolio-fullscreen-slider";
+import Contact from "@/components/contact.vue";
 import Footer from "@/components/footer";
+
+//Gallery Slider Img
+import galleryImageOne from "../../assets/images/hero-1-img.png";
+import galleryImageTwo from "../../assets/images/hero-1-img.png";
+import galleryImageThree from "../../assets/images/hero-1-img.png";
+import galleryImageFour from "../../assets/images/hero-1-img.png";
+import galleryImageFive from "../../assets/images/hero-1-img.png";
+import galleryImageSix from "../../assets/images/hero-1-img.png";
+
+//Portfolio Slider Imgs
+
+import portfolioImageOne from "../../assets/images/hero-4-bg.jpg";
+import portfolioImageTwo from "../../assets/images/linden-comansa-hero-image.jpg";
+import portfolioImageThree from "../../assets/images/hero-4-bg.jpg";
 
 export default {
   components: {
@@ -11,6 +26,7 @@ export default {
     PortfolioHead,
     PortfolioFullscreenSlider,
     PortfolioGallery,
+    Contact,
     Footer,
   },
   data() {
@@ -27,27 +43,27 @@ export default {
       ],
       images: [
         {
-          src: "path/to/image1.jpg",
+          src: galleryImageOne,
           alt: "image 1",
         },
         {
-          src: "path/to/image2.jpg",
+          src: galleryImageTwo,
           alt: "image 2",
         },
         {
-          src: "path/to/image3.jpg",
+          src: galleryImageThree,
           alt: "image 3",
         },
         {
-          src: "path/to/image1.jpg",
+          src: galleryImageFour,
           alt: "image 1",
         },
         {
-          src: "path/to/image2.jpg",
+          src: galleryImageFive,
           alt: "image 2",
         },
         {
-          src: "path/to/image3.jpg",
+          src: galleryImageSix,
           alt: "image 3",
         },
       ],
@@ -55,17 +71,31 @@ export default {
       currentImage: "",
       currentAlt: "",
 
-      portfolioSliderimages: [
+      portfolioSliderimagesTop: [
         {
-          src: "path/to/images1.jpg",
+          src: portfolioImageOne,
           alt: "Image 1",
         },
         {
-          src: "path/to/images2.jpg",
+          src: portfolioImageTwo,
           alt: "Image 2",
         },
         {
-          src: "path/to/images3.jpg",
+          src: portfolioImageThree,
+          alt: "image 3",
+        },
+      ],
+      portfolioSliderimagesBottom: [
+        {
+          src: portfolioImageOne,
+          alt: "Image 1",
+        },
+        {
+          src: portfolioImageTwo,
+          alt: "Image 2",
+        },
+        {
+          src: portfolioImageThree,
           alt: "image 3",
         },
       ],
@@ -83,6 +113,10 @@ export default {
   <div>
     <Navbar :navbarcolor="this.navbarcolor" />
     <PortfolioHead :projectHead="portfolioHead"></PortfolioHead>
+    <PortfolioFullscreenSlider
+      :portfolioSlider="portfolioSliderimagesTop"
+    ></PortfolioFullscreenSlider>
+    <!--
     <div class="row">
       <div class="col-lg-12">
         <div class="video-container">
@@ -97,53 +131,59 @@ export default {
           ></iframe>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <h3>Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            laboriosam et blanditiis veniam, ab adipisci. Veritatis aspernatur
-            quo assumenda velit maiores error, doloremque deserunt harum
-            incidunt ex recusandae quasi qui!
-          </p>
-        </div>
-        <div class="col-lg-8">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
-            ducimus hic earum cupiditate a magnam consequuntur adipisci ab quos
-            voluptate, expedita accusamus, quibusdam veritatis vitae, asperiores
-            rerum cum eius excepturi.
-          </p>
+    </div>-->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <h3>Title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              laboriosam et blanditiis veniam, ab adipisci. Veritatis aspernatur
+              quo assumenda velit maiores error, doloremque deserunt harum
+              incidunt ex recusandae quasi qui!
+            </p>
+          </div>
+          <div class="col-lg-8">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Architecto ducimus hic earum cupiditate a magnam consequuntur
+              adipisci ab quos voluptate, expedita accusamus, quibusdam
+              veritatis vitae, asperiores rerum cum eius excepturi.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <PortfolioGallery :imagesGallery="images"></PortfolioGallery>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <h3>Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            laboriosam et blanditiis veniam, ab adipisci. Veritatis aspernatur
-            quo assumenda velit maiores error, doloremque deserunt harum
-            incidunt ex recusandae quasi qui!
-          </p>
-        </div>
-        <div class="col-lg-8">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
-            ducimus hic earum cupiditate a magnam consequuntur adipisci ab quos
-            voluptate, expedita accusamus, quibusdam veritatis vitae, asperiores
-            rerum cum eius excepturi.
-          </p>
+    <section class="section bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <h3>Title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              laboriosam et blanditiis veniam, ab adipisci. Veritatis aspernatur
+              quo assumenda velit maiores error, doloremque deserunt harum
+              incidunt ex recusandae quasi qui!
+            </p>
+          </div>
+          <div class="col-lg-8">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Architecto ducimus hic earum cupiditate a magnam consequuntur
+              adipisci ab quos voluptate, expedita accusamus, quibusdam
+              veritatis vitae, asperiores rerum cum eius excepturi.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <PortfolioFullscreenSlider
-      :portfolioSlider="portfolioSliderimages"
+      :portfolioSlider="portfolioSliderimagesBottom"
     ></PortfolioFullscreenSlider>
+    <Contact></Contact>
     <Footer></Footer>
   </div>
 </template>

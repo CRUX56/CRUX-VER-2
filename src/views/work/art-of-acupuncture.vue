@@ -6,6 +6,20 @@ import PortfolioFullscreenSlider from "@/components/portfolio-fullscreen-slider"
 import Contact from "@/components/contact.vue";
 import Footer from "@/components/footer";
 
+//Gallery Slider Img
+import galleryImageOne from "../../assets/images/hero-1-img.png";
+import galleryImageTwo from "../../assets/images/hero-1-img.png";
+import galleryImageThree from "../../assets/images/hero-1-img.png";
+import galleryImageFour from "../../assets/images/hero-1-img.png";
+import galleryImageFive from "../../assets/images/hero-1-img.png";
+import galleryImageSix from "../../assets/images/hero-1-img.png";
+
+//Portfolio Slider Imgs
+
+import portfolioImageOne from "../../assets/images/hero-4-bg.jpg";
+import portfolioImageTwo from "../../assets/images/linden-comansa-hero-image.jpg";
+import portfolioImageThree from "../../assets/images/hero-4-bg.jpg";
+
 export default {
   components: {
     Navbar,
@@ -29,27 +43,27 @@ export default {
       ],
       images: [
         {
-          src: "path/to/image1.jpg",
+          src: galleryImageOne,
           alt: "image 1",
         },
         {
-          src: "path/to/image2.jpg",
+          src: galleryImageTwo,
           alt: "image 2",
         },
         {
-          src: "path/to/image3.jpg",
+          src: galleryImageThree,
           alt: "image 3",
         },
         {
-          src: "path/to/image1.jpg",
+          src: galleryImageFour,
           alt: "image 1",
         },
         {
-          src: "path/to/image2.jpg",
+          src: galleryImageFive,
           alt: "image 2",
         },
         {
-          src: "path/to/image3.jpg",
+          src: galleryImageSix,
           alt: "image 3",
         },
       ],
@@ -57,17 +71,31 @@ export default {
       currentImage: "",
       currentAlt: "",
 
-      portfolioSliderimages: [
+      portfolioSliderimagesTop: [
         {
-          src: "path/to/images1.jpg",
+          src: portfolioImageOne,
           alt: "Image 1",
         },
         {
-          src: "path/to/images2.jpg",
+          src: portfolioImageTwo,
           alt: "Image 2",
         },
         {
-          src: "path/to/images3.jpg",
+          src: portfolioImageThree,
+          alt: "image 3",
+        },
+      ],
+      portfolioSliderimagesBottom: [
+        {
+          src: portfolioImageOne,
+          alt: "Image 1",
+        },
+        {
+          src: portfolioImageTwo,
+          alt: "Image 2",
+        },
+        {
+          src: portfolioImageThree,
           alt: "image 3",
         },
       ],
@@ -85,6 +113,10 @@ export default {
   <div>
     <Navbar :navbarcolor="this.navbarcolor" />
     <PortfolioHead :projectHead="portfolioHead"></PortfolioHead>
+    <PortfolioFullscreenSlider
+      :portfolioSlider="portfolioSliderimagesTop"
+    ></PortfolioFullscreenSlider>
+    <!--
     <div class="row">
       <div class="col-lg-12">
         <div class="video-container">
@@ -99,10 +131,10 @@ export default {
           ></iframe>
         </div>
       </div>
-    </div>
+    </div>-->
     <section class="section bg-light">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-lg-4">
             <h3>Title</h3>
             <p>
@@ -126,7 +158,7 @@ export default {
     <PortfolioGallery :imagesGallery="images"></PortfolioGallery>
     <section class="section bg-light">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-lg-4">
             <h3>Title</h3>
             <p>
@@ -149,7 +181,7 @@ export default {
     </section>
 
     <PortfolioFullscreenSlider
-      :portfolioSlider="portfolioSliderimages"
+      :portfolioSlider="portfolioSliderimagesBottom"
     ></PortfolioFullscreenSlider>
     <Contact></Contact>
     <Footer></Footer>

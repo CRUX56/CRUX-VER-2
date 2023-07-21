@@ -17,7 +17,7 @@ import galleryImageSix from "../../assets/images/hero-1-img.png";
 //Portfolio Slider Imgs
 
 import portfolioImageOne from "../../assets/images/hero-4-bg.jpg";
-import portfolioImageTwo from "../../assets/images/hero-4-bg.jpg";
+import portfolioImageTwo from "../../assets/images/linden-comansa-hero-image.jpg";
 import portfolioImageThree from "../../assets/images/hero-4-bg.jpg";
 
 export default {
@@ -71,7 +71,21 @@ export default {
       currentImage: "",
       currentAlt: "",
 
-      portfolioSliderimages: [
+      portfolioSliderimagesTop: [
+        {
+          src: portfolioImageOne,
+          alt: "Image 1",
+        },
+        {
+          src: portfolioImageTwo,
+          alt: "Image 2",
+        },
+        {
+          src: portfolioImageThree,
+          alt: "image 3",
+        },
+      ],
+      portfolioSliderimagesBottom: [
         {
           src: portfolioImageOne,
           alt: "Image 1",
@@ -99,6 +113,10 @@ export default {
   <div>
     <Navbar :navbarcolor="this.navbarcolor" />
     <PortfolioHead :projectHead="portfolioHead"></PortfolioHead>
+    <PortfolioFullscreenSlider
+      :portfolioSlider="portfolioSliderimagesTop"
+    ></PortfolioFullscreenSlider>
+    <!--
     <div class="row">
       <div class="col-lg-12">
         <div class="video-container">
@@ -113,10 +131,10 @@ export default {
           ></iframe>
         </div>
       </div>
-    </div>
-    <section class="section bg-light align-items-center">
+    </div>-->
+    <section class="section bg-light">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-lg-4">
             <h3>Title</h3>
             <p>
@@ -140,7 +158,7 @@ export default {
     <PortfolioGallery :imagesGallery="images"></PortfolioGallery>
     <section class="section bg-light">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-lg-4">
             <h3>Title</h3>
             <p>
@@ -163,7 +181,7 @@ export default {
     </section>
 
     <PortfolioFullscreenSlider
-      :portfolioSlider="portfolioSliderimages"
+      :portfolioSlider="portfolioSliderimagesBottom"
     ></PortfolioFullscreenSlider>
     <Contact></Contact>
     <Footer></Footer>
